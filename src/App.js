@@ -27,7 +27,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 function App() {
   const [file, setFile] = useState(bga);
-  const [otherClicked, setOtherClicked] = useState(bga);
+  const [otherClicked, setOtherClicked] = useState(false);
 
   function onChangeHandler(filePath){
     setOtherClicked(false);
