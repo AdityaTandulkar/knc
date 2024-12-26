@@ -1,23 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
-import { Document, Page } from 'react-pdf';
 
 export default function PdfComp({ file }) {
-  const [numPages, setNumPages] = useState();
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
 
   return (
-    <div>
-      <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-        {
-          Array.apply(null, Array(numPages)).map((x, i) => i + 1).map((page) => (
-            <Page pageNumber={page} renderTextLayer={false} renderAnnotationLayer={false} />
-          ))
-        }
-      </Document>
+    <div style={{width: "100vw", height: "100vh"}}>
+      <object data={file} type="application/pdf" width="100%" height="100%">
+        <p>Alternative text - include a link <a href={file}>to the PDF!</a></p>
+      </object>
     </div>
   );
 }

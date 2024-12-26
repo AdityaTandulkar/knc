@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-import { pdfjs } from 'react-pdf';
 import PdfComp from './PdfComp';
 import bga from './pdfs/Big-Data-Assignment.pdf'
 import dma from './pdfs/Data-Mining-Assignment.pdf'
@@ -18,12 +17,6 @@ import img5 from "./pdfs/3.0.jpg"
 import img6 from "./pdfs/3.1.jpg"
 import img7 from "./pdfs/3.2.jpg"
 import img8 from "./pdfs/3.3.jpg"
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
-
 
 function App() {
   const [file, setFile] = useState(bga);
