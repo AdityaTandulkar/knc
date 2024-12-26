@@ -4,7 +4,6 @@ import { Document, Page } from 'react-pdf';
 
 export default function PdfComp({ file }) {
   const [numPages, setNumPages] = useState();
-  const [pageNumber, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
