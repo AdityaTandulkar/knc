@@ -2,10 +2,10 @@ import { useState } from 'react';
 import './App.css';
 import PdfComp from './PdfComp';
 import bga from './pdfs/Big-Data-Assignment.pdf'
-import dma from './pdfs/Data-Mining-Assignment.pdf'
-import pa from './pdfs/Python-Algo.pdf'
-import pf from './pdfs/Python-Flow.pdf'
-import pe from './pdfs/Python-Execution.pdf'
+// import dma from './pdfs/Data-Mining-Assignment.pdf'
+// import pa from './pdfs/Python-Algo.pdf'
+// import pf from './pdfs/Python-Flow.pdf'
+// import pe from './pdfs/Python-Execution.pdf'
 import aa from './pdfs/AI-Assignment.pdf'
 import sca from './pdfs/Soft-Computing-Assignment.pdf'
 import sce from './pdfs/Soft-Computing-Execution.pdf'
@@ -29,11 +29,11 @@ function App() {
   return (
     <div className="App">
       <div className="btn-container">
-        <button className='btn' onClick={()=>onChangeHandler(bga)}>Big Data Analytics</button>
+        {/* <button className='btn' onClick={()=>onChangeHandler(bga)}>Big Data Analytics</button>
         <button className='btn' onClick={()=>onChangeHandler(dma)}>Data Mining</button>
         <button className='btn' onClick={()=>onChangeHandler(pa)}>Python Algorithm</button>
         <button className='btn' onClick={()=>onChangeHandler(pf)}>Python Flowchart</button>
-        <button className='btn' onClick={()=>onChangeHandler(pe)}>Python Execution</button>
+        <button className='btn' onClick={()=>onChangeHandler(pe)}>Python Execution</button> */}
         <button className='btn' onClick={()=>onChangeHandler(aa)}>Artificial Intelligence</button>
         <button className='btn' onClick={()=>onChangeHandler(sca)}>Soft Assignment</button>
         <button className='btn' onClick={()=>onChangeHandler(sce)}>Soft Execution</button>
